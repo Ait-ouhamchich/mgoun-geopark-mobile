@@ -1,28 +1,33 @@
 workflows:
   ios-workflow:
-    name: iOS Workflow
+    name: iOS Build and Submit to TestFlight
     max_build_duration: 120
     environment:
-      ios: latest
       xcode: latest
-      cocoapods: default
       node: 18.13.0
+      vars:
+        EXPO_TOKEN: $EXPO_TOKEN
+        APP_STORE_CONNECT_PRIVATE_KEY: $APP_STORE_CONNECT_PRIVATE_KEY
+        APP_STORE_CONNECT_KEY_ID: $APP_STORE_CONNECT_KEY_ID
+        APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
     triggering:
       events:
         - push
       branch:
-        - main
+        include:
+          - main
     scripts:
       - name: Install dependencies
         script: |
           npm install -g eas-cli
           npm install
-      - name: Build iOS app
+          pnpm install
+      - name: Build iOS app with EAS
         script: |
           export EXPO_TOKEN=$EXPO_TOKEN
           eas build --platform ios --non-interactive --wait
     artifacts:
-      - build/ios/ipa/**/*.ipa
+      - build/ios/**/*.ipa
     publishing:
       app_store_connect:
         auth: integration
