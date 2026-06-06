@@ -1,0 +1,11 @@
+// Add this after handleMessage function (around line 271):
+
+  // Center map on selected geosite from search bar
+  useEffect(() => {
+    if (selectedGeosite && webViewRef.current) {
+      const lat = selectedGeosite.latitude;
+      const lng = selectedGeosite.longitude;
+      const cmd = `if (window.mapInstance) { window.mapInstance.setView([${lat}, ${lng}], 12, { animate: true, duration: 0.5 }); } true;`;
+      webViewRef.current.injectJavaScript(cmd);
+    }
+  }, [selectedGeosite]);

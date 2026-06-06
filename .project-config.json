@@ -1,0 +1,55 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [
+    "db",
+    "server",
+    "user"
+  ],
+  "dev_command": "pnpm run dev",
+  "env_vars": {
+    "DATABASE_URL": "mysql://2RWLoNft8WgPbLV.a921990cc24e:yOf8alnc009i1dID3oqo@gateway04.us-east-1.prod.aws.tidbcloud.com:4000/Xa2R8DCcrvSH59dgn7HTi2?ssl={\"rejectUnauthorized\":true}",
+    "DRIZZLE_DATABASE_URL": "mysql://2RWLoNft8WgPbLV.a921990cc24e:yOf8alnc009i1dID3oqo@gateway04.us-east-1.prod.aws.tidbcloud.com:4000/Xa2R8DCcrvSH59dgn7HTi2?ssl={\"rejectUnauthorized\":true}"
+  },
+  "experiments": [
+    "no_db_push"
+  ],
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663068642245/Xa2R8DCcrvSH59dgn7HTi2",
+    "access_key_id": "ASIAZV3A2ECZMJFJSMM6",
+    "secret_access_key": "BwlUjUF0E4dxkXBhyIxwNpR2aAm4j34QNWetsPRv",
+    "session_token": "IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJHMEUCIDeJn7aSVTTiQMSGVNiJjlgCL43ZxcD6C/6vrHFiO1ctAiEAiOQYrb7/NSndoXYU8F1UMf+glc3xFOxCJxKC4uGMgNcq/wMI4P//////////ARAEGgw2NjUzODYwOTg4NjYiDDIDZP1vJVnQa6BMQirTA6/JwnZJvBY9mHx34ULPNfA2M500LlKgEaPLCSD5hej2tiLDQN/ZQJehh8Lrg6lyxvsCnJmYPuwR53xABQjxMMHC8fb3jBL3Yr9rxcg38enzOt5eG8Pt1qLrfh8666nzXf/2lh8u6UFs8vd6yIBk5E75euoNMFmDXFfmF76oxv5XtufYY9LIM7Pbkw5CKkhueE2mGqVBm99AJChTCMSACny3Da1UPl1AXUKdk7AEfhg2NOslBFABYM2YdGCgGL31owI4tBs83zjB4lg8qqpBaGiQzGssnWanugsQtpW/D51nWCmRiKOgwqyEFEYv6GEQTjRKssLfjIXhdsHtiTO+K39gDDQvKA/ZE412P/mCYAf/EGD8iBtXMHNW3E4JyTUaZ6R17muPXlDmqQw9s6bcyJ7yfyhCYsBOB+Fxci7s8zN72MXvjHhS+Ata1iCIttwC8tMtyhUAjLy072b8SBKupAPgVgXXYns7Ns7c+uEUWr2dlDSYWYc80CZenOMU5CfwxXNmoDFb009/aU7NSpTAMt5cil/nDEmMxuuMueh1x3hLXtOti9fI//TuQjeN+S1PEY4Msmxue7aHK0VGL4JZkuVfjD70fXCcgU/1tBLBmnJuf7m8MJ7Ks9AGOp0BGxjtzTFwAbhLhTONj/3I3mESJTQwQfL2lwNTH0Am/q4BT5SscYaYj7boK5H/AW0Mw2Mqn0rozNZP6dShnAfAuSFPuReMO2Fucpcvmp+yJNYDGk9+uK9mBo/d3j7lt8cR0aI3GwPdd6X38EGpSgSd6kSNn6aq0vjGPbBbi1SXqrJt8fVF09BPB2NuqyQ8/bNceKMj7hzPyfDzMWmjew==",
+    "expiration": "2026-05-20T10:33:02.000Z"
+  },
+  "name": "mgoun-geopark-mobile",
+  "path": "/home/ubuntu/mgoun-geopark-mobile",
+  "port": 3000,
+  "secrets": {
+    "ADMIN_EMAIL": "mgounggn@gmail.com",
+    "APP_URL": "http://localhost:8081",
+    "BUILT_IN_FORGE_API_KEY": "fAnTNEkTzhUHSjGCp8BCH8",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "EMAILJS_PUBLIC_KEY": "mlxJi0KwYvb23VtoI",
+    "EMAILJS_SERVICE_ID": "service_h0nnfwi",
+    "EMAILJS_TEMPLATE_APPROVAL_ID": "template_5r3jwy7",
+    "EMAILJS_TEMPLATE_REJECTION_ID": "template_5r3jwy7",
+    "EMAILJS_TEMPLATE_SUBMISSION_ID": "template_5r3jwy7",
+    "EXPO_APP_QR_URL": "exps://8081-iyrj299amj8w2v5vvknm8-95707804.us2.manus.computer",
+    "EXPO_PACKAGER_PROXY_URL": "https://8081-iyrj299amj8w2v5vvknm8-95707804.us2.manus.computer",
+    "EXPO_PUBLIC_API_BASE_URL": "https://3000-iyrj299amj8w2v5vvknm8-95707804.us2.manus.computer",
+    "JWT_SECRET": "BFuGguCFqN4hB65rPQhPFt",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "tra div leader",
+    "OWNER_OPEN_ID": "9hduKy7uGEyesG4mCCFRHA",
+    "REACT_NATIVE_PACKAGER_HOSTNAME": "8081-iyrj299amj8w2v5vvknm8-95707804.us2.manus.computer",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "5615d3ff-392e-4f49-8a17-ab6552fbb710",
+    "VITE_APP_ID": "Xa2R8DCcrvSH59dgn7HTi2",
+    "VITE_APP_LOGO": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663068642245/eKUGmXioxpHabzIA.png",
+    "VITE_APP_TITLE": "M",
+    "VITE_FRONTEND_FORGE_API_KEY": "cZr8vXBKmHxThCWrzHyyKh",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "app",
+  "test_command": "pnpm test"
+}
