@@ -1,0 +1,30 @@
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    max_build_duration: 120
+    environment:
+      ios: latest
+      xcode: latest
+      cocoapods: default
+      node: 18.13.0
+    triggering:
+      events:
+        - push
+      branch:
+        - main
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install -g eas-cli
+          npm install
+      - name: Build iOS app
+        script: |
+          export EXPO_TOKEN=$EXPO_TOKEN
+          eas build --platform ios --non-interactive --wait
+    artifacts:
+      - build/ios/ipa/**/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: false
