@@ -22,8 +22,8 @@ workflows:
           eas build --platform ios --non-interactive --wait
     artifacts:
       - build/ios/**/*.ipa
-integrations:
-  app_store_connect: API App Store Connect  # ← Changé de "app_store_connect_integration"
+    integrations:
+      app_store_connect: API App Store Connect
     publishing:
       app_store_connect:
         auth: integration
