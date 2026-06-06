@@ -7,15 +7,11 @@ workflows:
       node: 18.13.0
       vars:
         EXPO_TOKEN: $EXPO_TOKEN
-        APP_STORE_CONNECT_PRIVATE_KEY: $APP_STORE_CONNECT_PRIVATE_KEY
-        APP_STORE_CONNECT_KEY_ID: $APP_STORE_CONNECT_KEY_ID
-        APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
     triggering:
       events:
         - push
       branch:
-        include:
-          - main
+        - main
     scripts:
       - name: Install dependencies
         script: |
@@ -33,3 +29,5 @@ workflows:
         auth: integration
         submit_to_testflight: true
         submit_to_app_store: false
+      integrations:
+        app_store_connect: app_store_connect_integration
