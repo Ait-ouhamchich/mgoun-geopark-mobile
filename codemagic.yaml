@@ -10,8 +10,6 @@ workflows:
     triggering:
       events:
         - push
-      branch:
-        - main
     scripts:
       - name: Install dependencies
         script: |
@@ -29,5 +27,3 @@ workflows:
         auth: integration
         submit_to_testflight: true
         submit_to_app_store: false
-      integrations:
-        app_store_connect: app_store_connect_integration
